@@ -1,3 +1,12 @@
 ---
 en:
+  shared:
+    topnav:
+      company_name: 'SAHAPORN TOOL LTD., PART.'
+      company_profile: 'COMPANY PROFILE'
+      company_slogan: 'DELIVERY ON TIME WITH TOP QUALITY GUARANTEE'
+      contact: 'CONTACT'
+      get_quotation: 'GET QUOTATION'
+      home: 'HOME'
+      services: 'SERVICES'
   hello: 'Hellosss'
