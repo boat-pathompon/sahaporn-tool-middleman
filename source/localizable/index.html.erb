@@ -3,4 +3,39 @@ title: 'HOME | SAHAPORN TOOLS'
 active_topnav: 'home'
 ---
 
-<a class="btn btn-primary"><%= t(:hello) %></a>
+<div id="home-carousel" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
+    <li data-target="#home-carousel" data-slide-to="1"></li>
+    <li data-target="#home-carousel" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <%= image_tag 'home-carousel/item-1.jpg' %>
+      <div class="carousel-image-mask"></div>
+      <div class="caption text-center">
+        <h2><%=t 'home.carousel_1_title' %></h2>
+        <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag 'home-carousel/item-1.jpg' %>
+      <div class="carousel-image-mask"></div>
+      <div class="caption text-center">
+        <h2><%=t 'home.carousel_1_title' %></h2>
+        <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag 'home-carousel/item-1.jpg' %>
+      <div class="carousel-image-mask"></div>
+      <div class="caption text-center">
+        <h2><%=t 'home.carousel_1_title' %></h2>
+        <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
+      </div>
+    </div>
+  </div>
+</div>

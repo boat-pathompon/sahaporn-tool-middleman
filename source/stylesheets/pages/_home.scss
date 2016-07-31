@@ -1,0 +1,73 @@
+#home-carousel {
+  .carousel-image-mask {
+    background-color: #fff;
+    bottom: 0;
+    left: 0;
+    opacity: 0.88;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+
+    li {
+      border: 2px solid #333;
+      border-radius: 50%;
+      height: 8px;
+      margin: 1px;
+      width: 8px;
+
+      &.active {
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+      }
+    }
+  }
+
+  .caption {
+    position: absolute;
+    left: 25%;
+    right: 25%;
+    top: 40%;
+    z-index: 1010;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 300;
+      margin-bottom: 30px;
+    }
+
+    .btn-primary {
+      padding: 8px 30px;
+    }
+
+    @media (max-width: $screen-md-max) {
+      top: 35%;
+    }
+
+    @media (max-width: $screen-sm-max) {
+      top: 30%;
+
+      h2 { font-size: 30px; }
+    }
+
+    @media (max-width: $screen-xs-max) {
+      left: 5%;
+      right: 5%;
+      top: 10%;
+
+      h2 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+
+      .btn-primary {
+        font-size: 12px;
+        padding: 6px 20px;
+      }
+    }
+  }
+}

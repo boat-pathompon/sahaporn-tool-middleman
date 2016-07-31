@@ -8,4 +8,6 @@ en:
       get_quotation: 'GET QUOTATION'
       home: 'HOME'
       services: 'SERVICES'
-  hello: 'Hellosss'
+  home:
+    carousel_1_title: 'Delivery On Time With Top Quality In Guarantee'
+    carousel_1_link_text: 'Our Services'
