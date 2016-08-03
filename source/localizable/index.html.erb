@@ -4,7 +4,7 @@ active_topnav: 'home'
 ---
 
 <div id="home-carousel" class="carousel slide" data-ride="carousel" >
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators carousel-indicators-navy">
     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#home-carousel" data-slide-to="1"></li>
     <li data-target="#home-carousel" data-slide-to="2"></li>
@@ -12,7 +12,16 @@ active_topnav: 'home'
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag 'home-carousel/item-1.jpg' %>
+      <%= image_tag 'home/carousel/item-1.jpg' %>
+      <div class="carousel-image-mask"></div>
+      <div class="caption text-center">
+        <h2><%=t 'home.carousel_1_title' %></h2>
+        <%= link_to t('home.carousel_1_link_text'), '#home-services', class: 'btn btn-primary' %>
+      </div>
+    </div>
+
+    <div class="item">
+      <%= image_tag 'home/carousel/item-1.jpg' %>
       <div class="carousel-image-mask"></div>
       <div class="caption text-center">
         <h2><%=t 'home.carousel_1_title' %></h2>
@@ -21,20 +30,110 @@ active_topnav: 'home'
     </div>
 
     <div class="item">
-      <%= image_tag 'home-carousel/item-1.jpg' %>
+      <%= image_tag 'home/carousel/item-1.jpg' %>
       <div class="carousel-image-mask"></div>
       <div class="caption text-center">
         <h2><%=t 'home.carousel_1_title' %></h2>
         <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
       </div>
     </div>
+  </div><!-- END carousel-inner -->
+</div><!-- END home-carousel -->
 
-    <div class="item">
-      <%= image_tag 'home-carousel/item-1.jpg' %>
-      <div class="carousel-image-mask"></div>
-      <div class="caption text-center">
-        <h2><%=t 'home.carousel_1_title' %></h2>
-        <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
+<div class="container" id="home-services">
+  <div class="text-center home-services-heading-block">
+    <h2><%=t 'home.services_we_provide' %></h2>
+    <p><%=t 'home.today_sahaporn_paragraph' %></p>
+  </div>
+
+  <div class="row">
+    <% 4.times do |i| %>
+      <div class="col-md-3 col-sm-6 col-xs-12">
+        <div class="service-square-image image-container-3"><%= image_tag "services/service-#{i+1}-square.jpg" %></div>
+        <div class="service-detail">
+          <h5><%=t "services.service_#{i+1}_title" %></h5>
+          <p><%=t "services.service_#{i+1}_description" %></p>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<div class="container" id="home-use-service">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div class="image-container-6" data-target="#home-use-service .detail-with-image">
+        <%= image_tag 'home/worker-01.jpg' %>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="detail-with-image left">
+        <h2><%=t 'home.simple_steps_to_use_our_services' %></h2>
+        <hr class="thick">
+        <p><%=t 'home.to_use_our_service_paragraph' %></p>
+        <p><%=t 'home.we_kindly_paragraph' %></p>
+        <h5><%=t 'home.information_we_need' %></h5>
+        <ul class="list-unstyled list-primary-bullet">
+          <li><%=t 'home.your_contact_informations' %></li>
+          <li><%=t 'home.your_project_requirement' %></li>
+          <li><%=t 'home.your_project_details' %></li>
+        </ul>
+        <div><%= link_to t('home.get_a_quotation'), '/quotation', class: 'btn btn-primary' %></div>
+        <p><%=t 'home.your_information_will_kept_privately' %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center" id="home-testimonials">
+  <div id="home-testimonial-carousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators carousel-indicators-navy">
+      <li data-target="#home-testimonial-carousel" data-slide-to="0" class="active"></li>
+      <li data-target="#home-testimonial-carousel" data-slide-to="1"></li>
+      <li data-target="#home-testimonial-carousel" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <h3><%=t 'home.testimonials.testimonial_1_message' %></h3>
+        <hr class="thick">
+        <b><%=t 'home.testimonials.testimonial_1_client' %></b>
+      </div>
+
+      <div class="item">
+        <h3><%=t 'home.testimonials.testimonial_1_message' %></h3>
+        <hr class="thick">
+        <b><%=t 'home.testimonials.testimonial_1_client' %></b>
+      </div>
+
+      <div class="item">
+        <h3><%=t 'home.testimonials.testimonial_1_message' %></h3>
+        <hr class="thick">
+        <b><%=t 'home.testimonials.testimonial_1_client' %></b>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="home-contacts">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div class="image-container-6" data-target="#home-contacts .detail-with-image">
+        <%= image_tag 'home/factory.jpg' %>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="detail-with-image left">
+        <h2><%=t 'home.contact.interested' %></h2>
+        <p><%=t 'home.contact.if_you_re_interested' %></p>
+        <div><%= link_to t('home.get_a_quotation'), '/quotation', class: 'btn btn-primary' %></div>
+        <p><%=t 'home.contact.if_you_want_more_info' %></p>
+        <p><%=t 'home.contact.please_give_us_a_call' %></p>
+        <h5 class="text-primary"><i class="fa fa-phone"></i><%=t 'home.contact.phone' %></h5>
+        <p><%=t 'home.contact.phone_time' %></p>
+        <b class="text-primary"><i class="fa fa-envelope"></i><%=t 'home.contact.email' %></b>
       </div>
     </div>
   </div>

@@ -2,6 +2,24 @@ a {
   cursor: pointer;
 }
 
+hr.thick {
+  border-top-width: 3px;
+}
+
+ul.list-unstyled.list-primary-bullet {
+  padding-left: 10px;
+
+  li {
+    margin: 20px 0;
+
+    &::before {
+      content: '• ';
+      color: $brand-primary;
+      margin-right: 5px;
+    }
+  }
+}
+
 #topnav {
   font-size: 12px;
   padding-top: 10px;
@@ -69,5 +87,41 @@ a {
 
   @media (min-width: $screen-sm-min) {
     padding-top: 20px;
+  }
+}
+
+.detail-with-image {
+  &.left {
+    p { margin-bottom: 15px; }
+
+    h2 {
+      margin-top: 0;
+    }
+
+    h5 {
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    ul {
+      margin-bottom: 35px;
+    }
+
+    hr {
+      margin-top: 8px;
+    }
+
+    .btn-primary {
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: $screen-sm-min) {
+      max-width: 455px;
+      padding: 50px 25px;
+    }
+
+    @media (min-width: $screen-md-min) {
+      padding-left: 65px;
+    }
   }
 }

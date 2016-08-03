@@ -1,29 +1,25 @@
+$home-block-spacing: 65px;
+
 #home-carousel {
-  .carousel-image-mask {
-    background-color: #fff;
-    bottom: 0;
-    left: 0;
-    opacity: 0.88;
-    position: absolute;
-    right: 0;
-    top: 0;
-    z-index: 1000;
-  }
+  margin-bottom: $home-block-spacing - 20px;
+  max-height: 540px;
+  overflow: hidden;
 
-  .carousel-indicators {
-    bottom: 0;
+  .item {
+    img {
+      height: auto;
+      width: 100%;
+    }
 
-    li {
-      border: 2px solid #333;
-      border-radius: 50%;
-      height: 8px;
-      margin: 1px;
-      width: 8px;
-
-      &.active {
-        background-color: $brand-primary;
-        border-color: $brand-primary;
-      }
+    .carousel-image-mask {
+      background-color: #fff;
+      bottom: 0;
+      left: 0;
+      opacity: 0.88;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1000;
     }
   }
 
@@ -31,7 +27,7 @@
     position: absolute;
     left: 25%;
     right: 25%;
-    top: 40%;
+    top: 200px;
     z-index: 1010;
 
     h2 {
@@ -69,5 +65,64 @@
         padding: 6px 20px;
       }
     }
+  }
+}
+
+#home-services {
+  margin-bottom: $home-block-spacing;
+
+  .home-services-heading-block {
+    margin-bottom: $home-block-spacing;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 590px;
+  }
+
+  h5 {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    min-height: 28px;
+  }
+
+  .service-detail {
+    @media (max-width: $screen-sm-max) {
+      min-height: 110px;
+    }
+
+    @media (max-width: $screen-xs-max) {
+      min-height: auto;
+      margin-bottom: 25px;
+    }
+  }
+}
+
+#home-use-service {
+  margin-bottom: $home-block-spacing - 35px;
+
+  .detail-with-image.left {
+    h5 { margin-top: 30px; }
+  }
+}
+
+#home-testimonials {
+  margin-bottom: $home-block-spacing;
+
+  .carousel {
+    padding-bottom: 50px;
+  }
+
+  hr {
+    margin: 8px auto;
+    width: 50%;
+  }
+}
+
+#home-contacts {
+  margin-bottom: $home-block-spacing - 35px;
+
+  .detail-with-image.left {
+    padding-bottom: 0;
+    padding-top: 0;
   }
 }

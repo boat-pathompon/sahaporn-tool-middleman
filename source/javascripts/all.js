@@ -1,2 +1,2 @@
 //= require bootstrap-sprockets
-//= require _test
+//= require plugins/_image_container

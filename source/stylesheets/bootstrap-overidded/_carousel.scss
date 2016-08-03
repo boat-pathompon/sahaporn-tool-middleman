@@ -1,0 +1,16 @@
+.carousel-indicators-navy.carousel-indicators {
+  bottom: 0;
+
+  li {
+    border: 2px solid #333;
+    border-radius: 50%;
+    height: 8px;
+    margin: 1px;
+    width: 8px;
+
+    &.active {
+      background-color: $brand-primary;
+      border-color: $brand-primary;
+    }
+  }
+}
