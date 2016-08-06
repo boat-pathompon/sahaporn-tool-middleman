@@ -43,13 +43,14 @@ ul.list-unstyled.list-primary-bullet {
     }
 
     li {
-      border-bottom: 3px solid transparent;
-      padding-bottom: 2px;
+      a {
+        border-bottom: 3px solid transparent;
+        padding-bottom: 2px;
+      }
 
       &.active {
-        border-bottom-color: #000;
-
         a {
+          border-bottom-color: #000;
           color: $brand-primary;
           font-weight: bold;
         }

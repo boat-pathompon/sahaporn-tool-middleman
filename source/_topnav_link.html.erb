@@ -1,7 +1,21 @@
 <ul class="navigation list-unstyled">
-  <li class="<%= 'active' if current_page.data.active_topnav == 'home' %>"><a><%= t('shared.topnav.home') %></a></li>
-  <li><a><%= t('shared.topnav.company_profile') %></a></li>
-  <li><a><%= t('shared.topnav.services') %></a></li>
-  <li><a><%= t('shared.topnav.get_quotation') %></a></li>
-  <li><a><%= t('shared.topnav.contact') %></a></li>
+  <li class="<%= 'active' if current_page.data.active_topnav == 'home' %>">
+    <%= link_to t('shared.topnav.home'), '/' %>
+  </li>
+
+  <li class="<%= 'active' if current_page.data.active_topnav == 'company_profile' %>">
+    <%= link_to t('shared.topnav.company_profile'), '/company-profile' %>
+  </li>
+
+  <li class="<%= 'active' if current_page.data.active_topnav == 'services' %>">
+    <%= link_to t('shared.topnav.services'), '/services' %>
+  </li>
+
+  <li class="<%= 'active' if current_page.data.active_topnav == 'quotation' %>">
+    <%= link_to t('shared.topnav.get_quotation'), '/quotation' %>
+  </li>
+
+  <li class="<%= 'active' if current_page.data.active_topnav == 'contact' %>">
+    <%= link_to t('shared.topnav.contact'), '/contact' %>
+  </li>
 </ul>
