@@ -51,6 +51,22 @@ $home-block-spacing: 65px;
     }
 
     @media (max-width: $screen-xs-max) {
+      left: 15%;
+      right: 15%;
+      top: 30%;
+
+      h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .btn-primary {
+        font-size: 12px;
+        padding: 6px 20px;
+      }
+    }
+
+    @media (max-width: $screen-xs-min) {
       left: 5%;
       right: 5%;
       top: 10%;
