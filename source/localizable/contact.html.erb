@@ -1,0 +1,35 @@
+---
+title: 'CONTACT | SAHAPORN TOOLS'
+active_topnav: 'contact'
+---
+
+<div class="container block-with-spacing-bottom" id="contact">
+  <div class="google-map image-fit-width">
+    <a href="https://www.google.co.th/maps/place/Sahaporntool+Ltd.,Part./@13.648864,100.5801773,17z/data=!3m1!4b1!4m5!3m4!1s0x30e2a0511aaa8ce9:0xe51e1a4a8d38e6e3!8m2!3d13.648864!4d100.582366" target="_blank">
+      <%= image_tag 'contact/sahaporn-google-map.png' %>
+    </a>
+  </div>
+
+  <h1><%=t 'company_info.company_name' %></h1>
+  <hr class="thick">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <%=t 'company_info.company_address' %>
+      <br class="visible-xs">
+      <br class="visible-xs">
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <table>
+        <tr>
+          <td style="min-width: 60px"><%=t 'contact.telephone' %></td>
+          <td><%=t 'company_info.phone' %></td>
+        </tr>
+        <tr>
+          <td style="min-width: 60px"><%=t 'contact.email' %></td>
+          <td><%=t 'company_info.email' %></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>

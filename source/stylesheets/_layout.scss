@@ -1,5 +1,14 @@
+$block-spacing: 65px;
+
 a {
   cursor: pointer;
+}
+
+h5 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  min-height: 28px;
 }
 
 hr.thick {
@@ -92,37 +101,75 @@ ul.list-unstyled.list-primary-bullet {
 }
 
 .detail-with-image {
-  &.left {
-    p { margin-bottom: 15px; }
+  p { margin-bottom: 15px; }
 
-    h2 {
-      margin-top: 0;
-    }
+  h2 {
+    margin-top: 0;
+  }
 
-    h5 {
-      font-size: 14px;
-      font-weight: bold;
-    }
+  h5 {
+    font-size: 14px;
+    font-weight: bold;
+  }
 
-    ul {
-      margin-bottom: 35px;
-    }
+  ul {
+    margin-bottom: 35px;
+  }
 
-    hr {
-      margin-top: 8px;
-    }
+  hr {
+    margin-top: 8px;
+  }
 
-    .btn-primary {
-      margin-bottom: 10px;
-    }
+  .btn-primary {
+    margin-bottom: 10px;
+  }
 
-    @media (min-width: $screen-sm-min) {
-      max-width: 455px;
-      padding: 50px 25px;
-    }
+  @media (min-width: $screen-sm-min) {
+    max-width: 455px;
+    padding: 50px 25px;
+  }
 
-    @media (min-width: $screen-md-min) {
-      padding-left: 65px;
+  @media (min-width: $screen-md-min) {
+    padding-left: 65px;
+  }
+
+  &.no-vertical-padding {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+}
+
+.heading-block {
+  margin-bottom: $block-spacing;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 590px;
+}
+
+.hero-image {
+  margin-bottom: 25px;
+
+  img {
+    display: block;
+    height: auto;
+    width: 100%;
+  }
+}
+
+.block-with-spacing-bottom {
+  margin-bottom: $block-spacing;
+}
+
+#services-navigation {
+  img {
+    @media (max-width: 540px) {
+      margin-top: 12px;
     }
+  }
+}
+
+.image-fit-width {
+  img {
+    width: 100%;
   }
 }

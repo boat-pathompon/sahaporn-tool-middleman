@@ -1,0 +1,110 @@
+---
+title: 'COMPANY PROFILE | SAHAPORN TOOLS'
+active_topnav: 'company_profile'
+---
+
+<div class="hero-image">
+  <%= image_tag 'company-profile/hero.jpg' %>
+</div>
+
+<div class="heading-block text-center">
+  <h1><%=t 'company_profile.delivery_on_time_with_top_quality' %></h1>
+  <p><%=t  'company_profile.we_produce_parts_supporting_paragraph' %></p>
+</div>
+
+<div class="container block-with-spacing-bottom" id="company-profile">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div class="image-container-6" data-target="#company-profile .detail-with-image">
+        <%= image_tag 'company-profile/profile-1.jpg' %>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="detail-with-image">
+        <h2><%=t 'company_profile.company_profile' %></h2>
+        <hr class="thick">
+        <p><%=t 'company_profile.sahaporn_tool_was_established_paragraph' %></p>
+        <p><%=t 'company_profile.we_are_leader_factory_in_thai_paragraph' %></p>
+        <p><%=t 'company_profile.currenty_we_support_comuputer_factories_paragraph' %></p>
+        <h5><%=t 'company_profile.our_vision' %></h5>
+        <p><%=t 'company_profile.company_vision' %></p>
+        <h5><%=t 'company_profile.our_mission' %></h5>
+        <ul class="list-unstyled list-primary-bullet">
+          <li><%=t 'company_profile.manufacture_products_at_the_finest_quality' %></li>
+          <li><%=t 'company_profile.trading_with_reasonable_price_term' %></li>
+          <li><%=t 'company_profile.research_and_develop_new_product_and_manufacturing_processes' %></li>
+          <li><%=t 'company_profile.maintain_employees_quality_of_life' %></li>
+          <li><%=t 'company_profile.being_a_sustainable_corporation' %></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container block-with-spacing-bottom" id="company-profile-decades">
+  <div class="row">
+    <div class="col-xs-12 visible-xs hidden-sm">
+      <div class="image-container-6" data-target="#company-profile-decades .detail-with-image">
+        <%= image_tag 'company-profile/profile-2.jpg' %>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="detail-with-image">
+        <h2><%=t 'company_profile.decades_of_experiences' %></h2>
+        <hr class="thick">
+        <p><%=t 'company_profile.for_the_past_35_years_paragraph' %></p>
+        <p><%=t 'company_profile.we_made_huge_investment_paragraph' %></p>
+        <p><%=t 'company_profile.we_can_ship_paragraph' %></p>
+        <p><%=t 'company_profile.we_look_forward_paragraph' %></p>
+      </div>
+    </div>
+
+     <div class="col-sm-6 hidden-xs">
+      <div class="image-container-6" data-target="#company-profile-decades .detail-with-image">
+        <%= image_tag 'company-profile/profile-2.jpg' %>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container block-with-spacing-bottom" id="company-profile-top-quality">
+  <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div class="image-container-6" data-target="#company-profile-top-quality .detail-with-image">
+        <%= image_tag 'company-profile/profile-3.jpg' %>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-xs-12">
+      <div class="detail-with-image">
+        <h2><%=t 'company_profile.top_quality_guaranteed' %></h2>
+        <hr class="thick">
+        <p><%=t 'company_profile.to_ensure_the_top_quality_paragraph' %></p>
+        <p><%=t 'company_profile.the_emphasis_of_quality_paragraph' %></p>
+        <p><%=t 'company_profile.we_have_team_of_experts_paragraph' %></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container text-center block-with-spacing-bottom" id="company-profile-numbers">
+  <div class="numbers-heading">
+    <h2><%=t 'company_profile.our_company_by_numbers' %></h2>
+    <hr class="thick">
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <% 4.times do |i| %>
+        <div class="col-sm-3 col-xs-6 company-number-block">
+          <div class="company-number"><%=t "company_profile.company_number_#{i+1}" %></div>
+          <div class="company-number-description"><%=t "company_profile.company_number_#{i+1}_description" %></div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+<%= partial 'services_navigation' %>

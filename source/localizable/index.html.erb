@@ -3,7 +3,7 @@ title: 'HOME | SAHAPORN TOOLS'
 active_topnav: 'home'
 ---
 
-<div id="home-carousel" class="carousel slide" data-ride="carousel" >
+<div id="home-carousel" class="carousel slide block-with-spacing-bottom" data-ride="carousel" >
   <ol class="carousel-indicators carousel-indicators-navy">
     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#home-carousel" data-slide-to="1"></li>
@@ -40,9 +40,9 @@ active_topnav: 'home'
   </div><!-- END carousel-inner -->
 </div><!-- END home-carousel -->
 
-<div class="container" id="home-services">
-  <div class="text-center home-services-heading-block">
-    <h2><%=t 'home.services_we_provide' %></h2>
+<div class="container block-with-spacing-bottom" id="home-services">
+  <div class="text-center heading-block">
+    <h1><%=t 'home.services_we_provide' %></h1>
     <p><%=t 'home.today_sahaporn_paragraph' %></p>
   </div>
 
@@ -59,7 +59,7 @@ active_topnav: 'home'
   </div>
 </div>
 
-<div class="container" id="home-use-service">
+<div class="container block-with-spacing-bottom" id="home-use-service">
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="image-container-6" data-target="#home-use-service .detail-with-image">
@@ -68,7 +68,7 @@ active_topnav: 'home'
     </div>
 
     <div class="col-sm-6 col-xs-12">
-      <div class="detail-with-image left">
+      <div class="detail-with-image">
         <h2><%=t 'home.simple_steps_to_use_our_services' %></h2>
         <hr class="thick">
         <p><%=t 'home.to_use_our_service_paragraph' %></p>
@@ -86,7 +86,7 @@ active_topnav: 'home'
   </div>
 </div>
 
-<div class="container text-center" id="home-testimonials">
+<div class="container text-center block-with-spacing-bottom" id="home-testimonials">
   <div id="home-testimonial-carousel" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators carousel-indicators-navy">
       <li data-target="#home-testimonial-carousel" data-slide-to="0" class="active"></li>
@@ -116,7 +116,7 @@ active_topnav: 'home'
   </div>
 </div>
 
-<div class="container" id="home-contacts">
+<div class="container block-with-spacing-bottom" id="home-contacts">
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="image-container-6" data-target="#home-contacts .detail-with-image">
@@ -125,15 +125,15 @@ active_topnav: 'home'
     </div>
 
     <div class="col-sm-6 col-xs-12">
-      <div class="detail-with-image left">
+      <div class="detail-with-image no-vertical-padding">
         <h2><%=t 'home.contact.interested' %></h2>
         <p><%=t 'home.contact.if_you_re_interested' %></p>
         <div><%= link_to t('home.get_a_quotation'), '/quotation', class: 'btn btn-primary' %></div>
         <p><%=t 'home.contact.if_you_want_more_info' %></p>
         <p><%=t 'home.contact.please_give_us_a_call' %></p>
-        <h5 class="text-primary"><i class="fa fa-phone"></i><%=t 'home.contact.phone' %></h5>
+        <h5 class="text-primary"><i class="fa fa-phone"></i><%=t 'company_info.phone' %></h5>
         <p><%=t 'home.contact.phone_time' %></p>
-        <b class="text-primary"><i class="fa fa-envelope"></i><%=t 'home.contact.email' %></b>
+        <b class="text-primary"><i class="fa fa-envelope"></i><%=t 'company_info.email' %></b>
       </div>
     </div>
   </div>

@@ -1,0 +1,58 @@
+#company-profile {
+  .detail-with-image {
+    ul {
+      margin-bottom: 0;
+    }
+  }
+}
+
+#company-profile-top-quality {
+  .detail-with-image {
+    @media(min-width: $screen-sm-min) {
+      padding-bottom: 80px;
+      padding-top: 80px;
+    }
+  }
+}
+
+#company-profile-numbers {
+  .numbers-heading {
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 590px;
+  }
+
+  .company-number {
+    font-size: 18px;
+
+    sup {
+      font-size: 14px;
+      line-height: 14px;
+      position: absolute;
+      right: 0;
+      top: 6px;
+    }
+
+    span {
+      font-size: 30px;
+    }
+
+    .number-with-sup {
+      margin: 0 auto;
+      position: relative;
+      width: 170px;
+    }
+  }
+
+  .company-number-description {
+    margin-bottom: 15px;
+  }
+
+  .company-number-block {
+    @media (max-width: 380px) {
+      float: none;
+      width: 100%;
+    }
+  }
+}

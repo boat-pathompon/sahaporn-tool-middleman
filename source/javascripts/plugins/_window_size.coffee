@@ -13,11 +13,11 @@ $ ->
       when 'lg'
         windowWidth >= _bsBreakpoints.lg
       when 'md'
-        windowWidth < _bsBreakpoints.lg and windowWidth >= _bsBreakpoints.sm
+        windowWidth < _bsBreakpoints.lg and windowWidth >= _bsBreakpoints.md
       when 'sm'
-        windowWidth < _bsBreakpoints.md and windowWidth >= _bsBreakpoints.xs
+        windowWidth < _bsBreakpoints.md and windowWidth >= _bsBreakpoints.sm
       when 'xs'
-        windowWidth < _bsBreakpoints.xs
+        windowWidth < _bsBreakpoints.sm
 
 
 

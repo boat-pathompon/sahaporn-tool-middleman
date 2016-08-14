@@ -1,7 +1,4 @@
-$home-block-spacing: 65px;
-
 #home-carousel {
-  margin-bottom: $home-block-spacing - 20px;
   max-height: 540px;
   overflow: hidden;
 
@@ -85,22 +82,6 @@ $home-block-spacing: 65px;
 }
 
 #home-services {
-  margin-bottom: $home-block-spacing;
-
-  .home-services-heading-block {
-    margin-bottom: $home-block-spacing;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 590px;
-  }
-
-  h5 {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    min-height: 28px;
-  }
-
   .service-detail {
     @media (max-width: $screen-sm-max) {
       min-height: 110px;
@@ -114,16 +95,12 @@ $home-block-spacing: 65px;
 }
 
 #home-use-service {
-  margin-bottom: $home-block-spacing - 35px;
-
-  .detail-with-image.left {
+  .detail-with-image {
     h5 { margin-top: 30px; }
   }
 }
 
 #home-testimonials {
-  margin-bottom: $home-block-spacing;
-
   .carousel {
     padding-bottom: 50px;
   }
@@ -131,14 +108,5 @@ $home-block-spacing: 65px;
   hr {
     margin: 8px auto;
     width: 50%;
-  }
-}
-
-#home-contacts {
-  margin-bottom: $home-block-spacing - 35px;
-
-  .detail-with-image.left {
-    padding-bottom: 0;
-    padding-top: 0;
   }
 }
