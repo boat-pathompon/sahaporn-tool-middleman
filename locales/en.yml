@@ -1,6 +1,7 @@
 ---
 en:
   shared:
+    browse: 'Browse'
     topnav:
       company_name: 'SAHAPORN TOOL LTD., PART.'
       company_profile: 'COMPANY PROFILE'
@@ -82,6 +83,26 @@ en:
     service_3_description: 'Of you have the ideas, we have the tools to realise your ideas/imagination. With our experts and sophisticated machines we can ensure that your ideas will become real.'
     service_4_title: 'Mass / Limited Production'
     service_4_description: 'After the prototype has been tested. You can choose manufacturing process that matched your product life cycle either small numberproduction to try out the market or mass production to reduce the manufacturing cost.'
+  quotation:
+    get_a_quotation: 'GET A QUOTATION'
+    to_estimate_the_service_fee_paragraph: 'To estimate the service fee, First fill in the Contact information below (field marked with an <b class="text-primary">*</b> are required for processing of the form).<br>Then submit the form and we will respond within 3 working days.'
+    form:
+      name: 'Name'
+      company: 'Company'
+      address: 'Address'
+      country: 'Country'
+      phone: 'Phone'
+      email: 'Email'
+      details_of_your_work: 'Details of your work'
+      quantity: 'Quantity'
+      drawing: 'Drawing'
+      additional_files: 'Additional Files'
+      file_hint: 'We accepted PDF, JPG, PNG files for photo or documents and we accepted CAD and Solidwork files for 3D projects or drawings.'
+      file_size_limit: 'File size limited to 10 MB.'
+      submit: 'Submit'
+      reset: 'Reset'
+      once_you_have_submitted_paragraph: 'Once you have submitted the information, We will review your request and send back the quotation.'
+      if_more_information_needed: 'If more information is needed, We will call or email you for the information needed to quoted.'
   contact:
     telephone: 'Tel.'
     email: 'Email'

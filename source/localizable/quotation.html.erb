@@ -1,0 +1,101 @@
+---
+title: 'GET QUOTATION | SAHAPORN TOOLS'
+active_topnav: 'quotation'
+---
+
+<div class="container block-with-spacing-bottom">
+  <div class="heading-block text-center">
+    <h1><%=t 'quotation.get_a_quotation' %></h1>
+    <p><%=t 'quotation.to_estimate_the_service_fee_paragraph' %></p>
+  </div>
+
+  <div class="quotation-form">
+    <form class="form-horizontal">
+      <div class="form-group">
+        <label for="name" class="col-sm-4 col-xs-12"><%=t 'quotation.form.name' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="text" class="form-control" name="name" id="name" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="company" class="col-sm-4 col-xs-12"><%=t 'quotation.form.company' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="text" class="form-control" name="company" id="company" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="address" class="col-sm-4 col-xs-12"><%=t 'quotation.form.address' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <textarea class="form-control" name="address" rows="6" id="address" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="country" class="col-sm-4 col-xs-12"><%=t 'quotation.form.country' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="text" class="form-control" name="country" value="Thailand" id="country" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="phone" class="col-sm-4 col-xs-12"><%=t 'quotation.form.phone' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="tel" class="form-control" name="phone" id="phone" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="email" class="col-sm-4 col-xs-12"><%=t 'quotation.form.email' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="email" class="form-control" name="email" id="email" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="details-of-your-work" class="col-sm-4 col-xs-12"><%=t 'quotation.form.details_of_your_work' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <textarea class="form-control" name="details_of_work" rows="6" id="details-of-your-work" required></textarea>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="quantity" class="col-sm-4 col-xs-12"><%=t 'quotation.form.quantity' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="tel" class="form-control" name="quantity" id="quantity" required>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Drawing" class="col-sm-4 col-xs-12"><%=t 'quotation.form.drawing' %> <b class="text-primary">*</b></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="file" class="form-control" name="drawing" id="file-drawing" required>
+          <a class="btn btn-wide btn-primary btn-file btn-lg" data-target="#file-drawing"><%=t 'shared.browse' %></a>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="Drawing" class="col-sm-4 col-xs-12"><%=t 'quotation.form.additional_files' %></label>
+        <div class="col-sm-8 col-xs-12">
+          <input type="file" class="form-control" name="drawing" id="file-additional">
+          <a class="btn btn-wide btn-primary btn-file btn-lg" data-target="#file-additional"><%=t 'shared.browse' %></a>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+          <p><small><%=t 'quotation.form.file_hint' %></small></p>
+          <p><small><%=t 'quotation.form.file_size_limit' %></small></p>
+          <div class="form-action">
+            <input type="submit" value="<%=t 'quotation.form.submit' %>" class="btn btn-wide btn-lg btn-primary">
+            <a href="/quotation" class="btn btn-wide btn-default btn-lg"><%=t 'quotation.form.reset' %></a>
+          </div>
+          <p><%=t 'quotation.form.once_you_have_submitted_paragraph' %></p>
+          <p><%=t 'quotaion.form.if_more_information_needed' %></p>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
