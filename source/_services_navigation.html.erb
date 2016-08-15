@@ -2,7 +2,9 @@
   <div class="heading-block text-center">
     <h2><%=t 'services.services_we_provide' %></h2>
     <p><%=t 'services.today_sahaporn_paragraph' %></p>
-    <p><%=t 'services.we_can_do_the_smallest_pins_paragraph' %></p>
+    <% if defined? show_smallest_pins_paragraph %>
+      <p><%=t 'services.we_can_do_the_smallest_pins_paragraph' %></p>
+    <% end %>
   </div>
 
   <div class="row">
