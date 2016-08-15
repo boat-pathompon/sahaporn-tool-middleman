@@ -7,10 +7,10 @@ $ ->
       else
         targetHeight = $($(@).attr('data-target')).outerHeight()
         $(@).css height: targetHeight
-        $(@).find('img').css height: '100%', width: 'auto'
+        $(@).find('img').css height: 'auto', width: '100%'
 
-        if window.windowSizeIs('lg')
-          $(@).find('img').css height: 'auto', width: '100%'
+        if window.windowSizeIs('sm')
+          $(@).find('img').css height: '100%', width: 'auto'
 
 
   $(window).on 'resize', resizeImageToCoverTarget

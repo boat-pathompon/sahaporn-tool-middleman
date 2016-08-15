@@ -2,6 +2,11 @@
   margin: 0 auto;
   max-width: 560px;
 
+  &.quotation-form-compact {
+    margin: 0;
+    max-width: none;
+  }
+
   input[type=text], input[type=tel], input[type=email], input[type=number], textarea {
     &.form-control {
       border: 1px solid #eee;
