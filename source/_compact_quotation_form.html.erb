@@ -5,7 +5,7 @@
   </div>
 
   <div class="quotation-form quotation-form-compact">
-    <form class="form-horizontal">
+    <form class="form-horizontal ajax-form" method="post" action="/submit_quotation.php" enctype="multipart/form-data">
       <div class="row">
         <div class="col-sm-6 col-xs-12">
           <h3><%=t 'quotation.contact_information' %></h3>
@@ -71,9 +71,9 @@
           </div>
 
           <div class="form-group">
-            <label for="Drawing" class="col-sm-4 col-xs-12"><%=t 'quotation.form.drawing' %> <b class="text-primary">*</b></label>
+            <label for="Drawing" class="col-sm-4 col-xs-12"><%=t 'quotation.form.drawing' %></label>
             <div class="col-sm-8 col-xs-12">
-              <input type="file" class="form-control" name="drawing" id="file-drawing" required>
+              <input type="file" class="form-control" name="drawing" id="file-drawing">
               <a class="btn btn-wide btn-primary btn-file btn-lg" data-target="#file-drawing"><%=t 'shared.browse' %></a>
             </div>
           </div>
@@ -97,8 +97,15 @@
       <hr class="thick">
       <div class="text-center">
         <div class="form-action">
-          <input type="submit" value="<%=t 'quotation.form.submit' %>" class="btn btn-wide btn-lg btn-primary">
-          <a href="/quotation" class="btn btn-wide btn-default btn-lg"><%=t 'quotation.form.reset' %></a>
+          <p class="submit-result">
+            <span class="text-success submit-success"><%=t 'form_submit_result.success' %></span>
+            <span class="text-danger validation-failed"><%=t 'form_submit_result.validation_failed' %></span>
+            <span class="text-danger submit-error"><%=t 'form_submit_result.error' %></span>
+          </p>
+          <button type="submit" class="btn btn-wide btn-lg btn-primary">
+            <%=t 'quotation.form.submit' %>
+          </button>
+          <a href="" class="btn btn-wide btn-default btn-lg"><%=t 'quotation.form.reset' %></a>
         </div>
         <p><%=t 'quotation.form.once_you_have_submitted_paragraph' %></p>
         <p><%=t 'quotation.form.if_more_information_needed' %></p>

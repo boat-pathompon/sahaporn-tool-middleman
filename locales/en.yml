@@ -132,3 +132,8 @@ en:
   contact:
     telephone: 'Tel.'
     email: 'Email'
+  form_submit_result:
+    success: 'Form was submit successfully.'
+    validation_failed: 'File was invalid.'
+    error: 'Something went wrong, please try again later.'
+
