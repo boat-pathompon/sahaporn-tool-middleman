@@ -110,6 +110,8 @@ ul.list-unstyled.list-primary-bullet {
   h5 {
     font-size: 14px;
     font-weight: bold;
+    margin-top: 25px;
+    min-height: 16px;
   }
 
   ul {
@@ -171,6 +173,10 @@ ul.list-unstyled.list-primary-bullet {
 
   &.small-bottom-padding {
     margin-bottom: $block-spacing - 25px;
+  }
+
+  &.wide {
+    max-width: 768px;
   }
 }
 
