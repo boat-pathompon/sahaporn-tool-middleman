@@ -7,12 +7,11 @@ active_topnav: 'home'
   <ol class="carousel-indicators carousel-indicators-navy">
     <li data-target="#home-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#home-carousel" data-slide-to="1"></li>
-    <li data-target="#home-carousel" data-slide-to="2"></li>
   </ol>
 
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <%= image_tag 'home/carousel/item-1.jpg' %>
+      <%= image_tag 'home/carousel/item-1.png' %>
       <div class="carousel-image-mask"></div>
       <div class="caption text-center">
         <h2><%=t 'home.carousel_1_title' %></h2>
@@ -21,16 +20,7 @@ active_topnav: 'home'
     </div>
 
     <div class="item">
-      <%= image_tag 'home/carousel/item-1.jpg' %>
-      <div class="carousel-image-mask"></div>
-      <div class="caption text-center">
-        <h2><%=t 'home.carousel_1_title' %></h2>
-        <%= link_to t('home.carousel_1_link_text'), '#', class: 'btn btn-primary' %>
-      </div>
-    </div>
-
-    <div class="item">
-      <%= image_tag 'home/carousel/item-1.jpg' %>
+      <%= image_tag 'home/carousel/item-2.png' %>
       <div class="carousel-image-mask"></div>
       <div class="caption text-center">
         <h2><%=t 'home.carousel_1_title' %></h2>
@@ -40,30 +30,13 @@ active_topnav: 'home'
   </div><!-- END carousel-inner -->
 </div><!-- END home-carousel -->
 
-<div class="container block-with-spacing-bottom" id="home-services">
-  <div class="text-center heading-block">
-    <h1><%=t 'home.services_we_provide' %></h1>
-    <p><%=t 'home.today_sahaporn_paragraph' %></p>
-  </div>
-
-  <div class="row">
-    <% 4.times do |i| %>
-      <div class="col-md-3 col-sm-6 col-xs-12">
-        <div class="service-square-image image-container-3"><%= image_tag "services/service-#{i+1}-square.jpg" %></div>
-        <div class="service-detail">
-          <h5><%=t "services.service_#{i+1}_title" %></h5>
-          <p><%=t "services.service_#{i+1}_description" %></p>
-        </div>
-      </div>
-    <% end %>
-  </div>
-</div>
+<%= partial 'services_navigation' %>
 
 <div class="container block-with-spacing-bottom" id="home-use-service">
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="image-container-6" data-target="#home-use-service .detail-with-image">
-        <%= image_tag 'home/worker-01.jpg' %>
+        <%= image_tag 'home/worker.png' %>
       </div>
     </div>
 
@@ -120,7 +93,7 @@ active_topnav: 'home'
   <div class="row">
     <div class="col-sm-6 col-xs-12">
       <div class="image-container-6" data-target="#home-contacts .detail-with-image">
-        <%= image_tag 'home/factory.jpg' %>
+        <%= image_tag 'home/factory.png' %>
       </div>
     </div>
 
