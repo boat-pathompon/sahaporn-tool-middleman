@@ -10,11 +10,19 @@
   input[type=text], input[type=tel], input[type=email], input[type=number], textarea {
     &.form-control {
       border: 1px solid #eee;
-      box-shadow: none;
+      box-shadow: none !important;
       outline: none;
       padding-bottom: 20px;
       padding-top: 20px;
       resize: none;
+    }
+  }
+
+  .has-error {
+    input[type=text], input[type=tel], input[type=email], input[type=number], textarea {
+      &.form-control {
+        border-color: #faa;
+      }
     }
   }
 

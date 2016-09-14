@@ -4,6 +4,19 @@ $ ->
     $form.on 'submit', (e) ->
       e.preventDefault()
 
+      ua = navigator.userAgent.toLowerCase()
+      form = e.target
+
+      if !form.checkValidity()
+        $(form).find('.has-error').removeClass('has-error')
+        $element = $(form).find('input:invalid, select:invalid, textarea:invalid').first()
+        $element.parents('.form-group').addClass('has-error')
+        if /iphone/.test(ua) || /ipad/.test(ua)
+          window.scrollTo(0, $element.offset().top - 30)
+        $element.focus()
+
+        return
+
       $submit = $form.find('button[type="submit"]')
       $submit.addClass('disabled').prop('disabled', true)
       $submit.prepend('<i class="fa fa-spin fa-circle-o-notch" styple="magin-left: 8px"></i>')
