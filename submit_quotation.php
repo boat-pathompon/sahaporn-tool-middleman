@@ -136,12 +136,23 @@
   function initMail($emailBody, $emailFiles) {
     $mail = new PHPMailer;
     $mail->IsSMTP();
+
+    // Debugging.
     // $mail->Debugoutput = 'html';
     // $mail->SMTPDebug   = 2;
+
+    // Send using gmail.
+    // $mail->SMTPAuth    = true;
+    // $mail->Host        = 'smtp.gmail.com';
+    // $mail->SMTPSecure  = 'tls';
+    // $mail->Port        = 587;
+
+    // Send using anet.
     $mail->SMTPAuth    = true;
-    $mail->Host        = 'smtp.gmail.com';
+    $mail->Host        = 'smtp4.anet.net.th';
     $mail->SMTPSecure  = 'tls';
-    $mail->Port        = 587;
+    $mail->Port        = 25;
+
     $mail->Username    = USERNAME;
     $mail->Password    = PASSWORD;
 
