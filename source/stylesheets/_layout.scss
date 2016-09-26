@@ -195,6 +195,12 @@ ul.list-unstyled.list-primary-bullet {
 }
 
 #services-navigation {
+  a {
+    &, &:hover, &:focus, &:active, &:visited {
+      color: inherit;
+    }
+  }
+
   img {
     @media (max-width: 540px) {
       margin-top: 12px;
