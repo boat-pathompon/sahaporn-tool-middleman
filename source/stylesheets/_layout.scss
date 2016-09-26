@@ -229,3 +229,22 @@ footer {
     }
   }
 }
+
+#logo {
+  padding-top: 5px;
+
+  img {
+    display: inline;
+    margin-right: 8px;
+  }
+}
+
+#footer-logo {
+  height: 52px;
+  margin-top: 18px;
+  opacity: 0.2;
+
+  @media (max-width: $screen-sm-max) {
+    margin-left: -8px;
+  }
+}

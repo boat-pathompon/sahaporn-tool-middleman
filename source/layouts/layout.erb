@@ -24,12 +24,13 @@
             <span class="icon-bar"></span>
           </button>
 
-          <div class="navbar-brand">
-            <div class="text-primary"><b><%= t('shared.topnav.company_name') %></b></div>
-          </div>
+          <a href="/" class="navbar-brand" id="logo">
+            <%= image_tag 'logo.png', height: 40 %>
+            <b class="text-primary"><%= t('shared.topnav.company_name') %></b>
+          </a>
         </div>
 
-        <div class="navbar-right horizontal-nav hidden-xs">
+        <div class="navbar-right horizontal-nav hidden-xs" style="padding-left: 0">
           <%= partial 'topnav_link' %>
         </div>
 
@@ -44,14 +45,17 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-10 col-sm-9 col-xs-6">
+          <div class="col-md-1 col-sm-1 hidden-xs text-right">
+            <%= image_tag 'logo-white.png', id: 'footer-logo', height: 64 %>
+          </div>
+          <div class="col-md-9 col-sm-8 col-xs-7">
             <h4><%=t 'company_info.company_name' %></h4>
             <div class="row">
-              <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="col-md-5 col-sm-7 col-xs-12">
                 <p><%=t 'company_info.company_address' %></p>
               </div>
 
-              <div class="col-md-8 col-sm-6 col-xs-12">
+              <div class="col-md-7 col-sm-5 col-xs-12">
                 <table>
                   <tr>
                     <td style="min-width: 60px"><%=t 'contact.telephone' %></td>
@@ -66,7 +70,7 @@
             </div>
           </div>
 
-          <div class="col-md-2 col-sm-3 col-xs-6">
+          <div class="col-md-2 col-sm-3 col-xs-5">
             <ul class="footer-nav list-unstyled">
               <li><%= link_to t('shared.topnav.home'), '/' %></li>
               <li><%= link_to t('shared.topnav.company_profile'), '/company-profile' %></li>
