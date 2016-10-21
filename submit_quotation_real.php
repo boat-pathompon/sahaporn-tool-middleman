@@ -12,7 +12,8 @@
   // define('PASSWORD'     , 'sahaporn1234');
   define('FROM_ADDRESS' , 'sahaporn@anet.net.th');
   define('FROM_NAME'    , 'Sahaporn Tool Form');
-  define('TO_ADDRESS'   , 'sahaporn@anet.net.th');
+  // define('TO_ADDRESS'   , 'sahaporn@anet.net.th');
+  define('TO_ADDRESS'   , 'boat@eventpop.me');
   define('REPLY_ADDRESS', 'no-reply@anet.net.th');
   define('REPLY_NAME'   , 'No-Reply');
 
@@ -51,7 +52,7 @@
 
   // Validate extension.
   function _extensionAllowed($extension) {
-    $allowedExtensions = array('jpg', 'png', 'gif');
+    $allowedExtensions = array('jpg', 'png', 'gif', 'pdf', 'cad');
 
     if (sizeof($allowedExtensions) == 0){
       return true;
@@ -150,6 +151,7 @@
     $mail->addAddress(TO_ADDRESS);
     $mail->addReplyTo($_POST['email'], $_POST['name']);
 
+    $mail->CharSet = 'UTF-8';
     $mail->Subject = 'Quotation Form Submitted from '.$_POST['name'];
     $mail->Body    = $emailBody->html;
     $mail->AltBody = $emailBody->text;

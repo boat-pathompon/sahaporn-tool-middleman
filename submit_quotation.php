@@ -148,6 +148,7 @@
     // $mail->Port        = 587;
 
     // Send using anet.
+    $mail->CharSet     = 'UTF-8';
     $mail->SMTPAuth    = true;
     $mail->Host        = 'smtp4.anet.net.th';
     $mail->SMTPSecure  = 'tls';
