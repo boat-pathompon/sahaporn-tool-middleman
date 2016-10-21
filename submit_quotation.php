@@ -51,7 +51,7 @@
 
   // Validate extension.
   function _extensionAllowed($extension) {
-    $allowedExtensions = array('jpg', 'png', 'gif');
+    $allowedExtensions = array('jpg', 'png', 'gif', 'pdf', 'cad');
 
     if (sizeof($allowedExtensions) == 0){
       return true;
