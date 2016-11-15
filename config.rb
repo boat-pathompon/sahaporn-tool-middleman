@@ -9,20 +9,21 @@ page '/*.txt', layout: false
 activate :asset_hash
 activate :directory_indexes
 activate :sprockets
-activate :i18n, langs: [:en, :th], mount_at_root: :en
+activate :i18n, langs: [:en, :th, :cn, :de], mount_at_root: :en
 
 ###
 # Helpers
 ###
 
-# Methods defined in the helpers block are available in templates
-# helpers do
-#   def some_helper
-#     "Helping"
-#   end
-# end
+helpers do
+  def localized_path(path)
+    if I18n.locale != :en && path.match(/^\/.*/)
+      path.gsub!(/^\//, "/#{I18n.locale}/")
+    end
 
-
+    path
+  end
+end
 
 # Build-specific configuration
 configure :build do

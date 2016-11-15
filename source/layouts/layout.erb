@@ -24,10 +24,10 @@
             <span class="icon-bar"></span>
           </button>
 
-          <a href="/" class="navbar-brand" id="logo">
+          <% link_to localized_path("/"), class: "navbar-brand", id: "logo" do %>
             <%= image_tag 'logo.png', height: 40 %>
             <b class="text-primary"><%= t('shared.topnav.company_name') %></b>
-          </a>
+          <% end %>
         </div>
 
         <div class="navbar-right horizontal-nav hidden-xs" style="padding-left: 0">
@@ -72,11 +72,11 @@
 
           <div class="col-md-2 col-sm-3 col-xs-5">
             <ul class="footer-nav list-unstyled">
-              <li><%= link_to t('shared.topnav.home'), '/' %></li>
-              <li><%= link_to t('shared.topnav.company_profile'), '/company-profile' %></li>
-              <li><%= link_to t('shared.topnav.services'), '/services' %></li>
-              <li><%= link_to t('shared.topnav.get_quotation'), '/quotation' %></li>
-              <li><%= link_to t('shared.topnav.contact_us'), '/contact' %></li>
+              <li><%= link_to t('shared.topnav.home'), localized_path('/') %></li>
+              <li><%= link_to t('shared.topnav.company_profile'), localized_path('/company-profile') %></li>
+              <li><%= link_to t('shared.topnav.services'), localized_path('/services') %></li>
+              <li><%= link_to t('shared.topnav.get_quotation'), localized_path('/quotation') %></li>
+              <li><%= link_to t('shared.topnav.contact_us'), localized_path('/contact') %></li>
             </ul>
           </div>
         </div>

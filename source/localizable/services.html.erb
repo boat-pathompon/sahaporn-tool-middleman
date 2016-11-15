@@ -6,47 +6,47 @@ active_topnav: 'services'
 <div class="hero-image text-center">
   <%= image_tag 'services/service-1.png' %>
   <div class="heading-block small-bottom-padding wide">
-    <a href="/services/industrial-parts" class="silent-link">
+    <% link_to localized_path("/services/industrial-parts"), class: "silent-link" do %>
       <h1><%=t 'services.service_1_title' %></h1>
-    </a>
+    <% end %>
     <p><%=t 'services.service_1_description' %></p>
     <br>
-    <u><%= link_to t('shared.more_details'), '/services/industrial-parts' %></u>
+    <u><%= link_to t('shared.more_details'), localized_path('/services/industrial-parts') %></u>
   </div>
 </div>
 
 <div class="hero-image text-center">
   <%= image_tag 'services/service-2.png' %>
   <div class="heading-block small-bottom-padding wide">
-    <a href="/services/specific-design" class="silent-link">
+    <% link_to localized_path("/services/specific-design"), class: "silent-link" do %>
       <h1><%=t 'services.service_2_title' %></h1>
-    </a>
+    <% end %>
     <p><%=t 'services.service_2_description' %></p>
     <br>
-    <u><%= link_to t('shared.more_details'), '/services/specific-design' %></u>
+    <u><%= link_to t('shared.more_details'), localized_path('/services/specific-design') %></u>
   </div>
 </div>
 
 <div class="hero-image text-center">
   <%= image_tag 'services/service-3.png' %>
   <div class="heading-block small-bottom-padding wide">
-    <a href="/services/from-idea-to-reality" class="silent-link">
+    <% link_to localized_path("/services/from-idea-to-reality"), class: "silent-link" do %>
       <h1><%=t 'services.service_3_title' %></h1>
-    </a>
+    <% end %>
     <p><%=t 'services.service_3_description' %></p>
     <br>
-    <u><%= link_to t('shared.more_details'), '/services/from-idea-to-reality' %></u>
+    <u><%= link_to t('shared.more_details'), localized_path('/services/from-idea-to-reality') %></u>
   </div>
 </div>
 
 <div class="hero-image text-center">
   <%= image_tag 'services/service-4.png' %>
   <div class="heading-block wide">
-    <a href="/services/mass-production" class="silent-link">
+    <% link_to localized_path("/services/mass-production"), class: "silent-link" do %>
       <h1><%=t 'services.service_4_title' %></h1>
-    </a>
+    <% end %>
     <p><%=t 'services.service_4_description' %></p>
     <br>
-    <u><%= link_to t('shared.more_details'), '/services/mass-production' %></u>
+    <u><%= link_to t('shared.more_details'), localized_path('/services/mass-production') %></u>
   </div>
 </div>

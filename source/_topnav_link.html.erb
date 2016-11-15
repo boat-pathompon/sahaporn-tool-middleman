@@ -1,21 +1,21 @@
 <ul class="navigation list-unstyled">
   <li class="<%= 'active' if current_page.data.active_topnav == 'home' %>">
-    <%= link_to t('shared.topnav.home'), '/' %>
+    <%= link_to t('shared.topnav.home'), localized_path('/') %>
   </li>
 
   <li class="<%= 'active' if current_page.data.active_topnav == 'company_profile' %>">
-    <%= link_to t('shared.topnav.company_profile'), '/company-profile' %>
+    <%= link_to t('shared.topnav.company_profile'), localized_path('/company-profile') %>
   </li>
 
   <li class="<%= 'active' if current_page.data.active_topnav == 'services' %>">
-    <%= link_to t('shared.topnav.services'), '/services' %>
+    <%= link_to t('shared.topnav.services'), localized_path('/services') %>
   </li>
 
   <li class="<%= 'active' if current_page.data.active_topnav == 'quotation' %>">
-    <%= link_to t('shared.topnav.get_quotation'), '/quotation' %>
+    <%= link_to t('shared.topnav.get_quotation'), localized_path('/quotation') %>
   </li>
 
   <li class="<%= 'active' if current_page.data.active_topnav == 'contact' %>">
-    <%= link_to t('shared.topnav.contact'), '/contact' %>
+    <%= link_to t('shared.topnav.contact'), localized_path('/contact') %>
   </li>
 </ul>
