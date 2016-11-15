@@ -24,7 +24,7 @@
             </a>
 
             <ul class="dropdown-menu dropdown-menu-right">
-              <% { en: 'ENGLISH', cn: 'CHINESE', de: 'GERMAN', jp: 'JAPAN', th: 'THAI' }.each do |key, value| %>
+              <% { en: 'ENGLISH', cn: 'CHINESE', de: 'GERMAN' }.each do |key, value| %>
                 <li>
                   <% link_to localized_path(current_page.url, key) do %>
                     <%= image_tag "flags/#{key}.png", height: 14 %>
