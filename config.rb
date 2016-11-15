@@ -16,9 +16,10 @@ activate :i18n, langs: [:en, :th, :cn, :de], mount_at_root: :en
 ###
 
 helpers do
-  def localized_path(path)
-    if I18n.locale != :en && path.match(/^\/.*/)
-      path.gsub!(/^\//, "/#{I18n.locale}/")
+  def localized_path(path, locale=I18n.locale)
+    path.gsub!(/^\/(de|cn|jp|th)\//, '/') if path.match /^\/(de|cn|jp|th)\//
+    if locale != :en && path.match(/^\/.*/)
+      path.gsub!(/^\//, "/#{locale}/")
     end
 
     path

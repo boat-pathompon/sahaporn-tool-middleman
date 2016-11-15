@@ -17,6 +17,29 @@
     <!-- NAV BAR -->
     <nav id='topnav' class="navbar">
       <div class="container">
+        <div class="pull-right lang-switcher">
+          <div class="dropdown">
+            <a class="dropdown-toggle silent-link" data-toggle="dropdown">
+              <%= image_tag "flags/#{I18n.locale}.png", height: 14 %> <%= I18n.locale.to_s.upcase %> <i class="fa fa-caret-down"></i>
+            </a>
+
+            <ul class="dropdown-menu dropdown-menu-right">
+              <% { en: 'ENGLISH', cn: 'CHINESE', de: 'GERMAN', jp: 'JAPAN', th: 'THAI' }.each do |key, value| %>
+                <li>
+                  <% link_to localized_path(current_page.url, key) do %>
+                    <%= image_tag "flags/#{key}.png", height: 14 %>
+                    <% if  I18n.locale == key  %>
+                      <b class="text-primary"><%= value %></b>
+                    <% else %>
+                      <%= value %>
+                    <% end %>
+                  <% end %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+
         <div class="navbar-header">
           <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topnav-collapse">
             <span class="icon-bar"></span>
