@@ -12,8 +12,7 @@
   // define('PASSWORD'     , 'sahaporn1234');
   define('FROM_ADDRESS' , 'sahaporn@anet.net.th');
   define('FROM_NAME'    , 'Sahaporn Tool Form');
-  // define('TO_ADDRESS'   , 'sahaporn@anet.net.th');
-  define('TO_ADDRESS'   , 'boat@eventpop.me');
+  define('TO_ADDRESS'   , 'sahaporn@anet.net.th');
   define('REPLY_ADDRESS', 'no-reply@anet.net.th');
   define('REPLY_NAME'   , 'No-Reply');
 
