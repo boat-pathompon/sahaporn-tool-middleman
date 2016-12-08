@@ -9,7 +9,7 @@ page '/*.txt', layout: false
 activate :asset_hash
 activate :directory_indexes
 activate :sprockets
-activate :i18n, langs: [:en, :th, :cn, :de], mount_at_root: :en
+activate :i18n, langs: [:en, :th, :cn, :de, :jp], mount_at_root: :en
 
 ###
 # Helpers
