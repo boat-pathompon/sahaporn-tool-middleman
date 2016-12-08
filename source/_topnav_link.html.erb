@@ -15,6 +15,10 @@
     <%= link_to t('shared.topnav.get_quotation'), localized_path('/quotation') %>
   </li>
 
+  <li class="<%= 'active' if current_page.data.active_topnav == 'gallery' %>">
+    <%= link_to t('shared.topnav.gallery'), localized_path('/gallery') %>
+  </li>
+
   <li class="<%= 'active' if current_page.data.active_topnav == 'contact' %>">
     <%= link_to t('shared.topnav.contact'), localized_path('/contact') %>
   </li>

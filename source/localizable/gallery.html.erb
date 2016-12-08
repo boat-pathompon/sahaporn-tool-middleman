@@ -1,0 +1,23 @@
+---
+title: 'GALLERY | SAHAPORN TOOLS'
+active_topnav: 'gallery'
+---
+
+<div class="container block-with-spacing-bottom" id="gallery">
+  <div class="heading-block text-center">
+    <h1><%=t 'shared.topnav.gallery' %></h1>
+  </div>
+
+  <div class="row">
+    <% 17.times.each  do |i| %>
+      <div class="col-sm-3 col-xs-4">
+        <div class="gallery-item">
+          <% image_name = (i+1).to_s.rjust(3, '0') %>
+          <a href="/images/gallery/<%= image_name %>.jpg" data-lightbox="gallery">
+            <%= image_tag "gallery/#{image_name}.jpg" %>
+          </a>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</div>
